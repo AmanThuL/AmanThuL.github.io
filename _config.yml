@@ -1,7 +1,7 @@
 # Setup
-title: Blog
-tagline: "By Rudy Zhang"
-description: 'A reserved <a href="https://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+title: Pixel Grimoire
+tagline: "by Rudy Zhang"
+description: 'I am currently a student at Rochester Institute of Technology. This blog is a place for me to leave any game creation and graphics learning thoughts. Made with <a href="https://github.com/poole/lanyon" target="_blank">Lanyon</a>, a <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> theme.'
 url: "https://amanthul.github.io"
 baseurl: ""
 paginate: 5
@@ -9,14 +9,14 @@ permalink: pretty
 
 # About/contact
 author:
-  name: Mark Otto
-  url: https://twitter.com/mdo
-  email: markdotto@gmail.com
+  name: Rudy Zhang
+  url: https://twitter.com/amanthul233
+  email: rxz2801@rit.edu
 
 # Gems
 plugins:
   - jekyll-paginate
 
 # Custom vars
-version: 1.1.0
+version: 1.0.0
 google_analytics_id: UA-146052-15
