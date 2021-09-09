@@ -1,22 +1,19 @@
-# Setup
 title: Pixel Grimoire
-tagline: "by Rudy Zhang"
-description: 'I am currently a student at Rochester Institute of Technology. This blog is a place for me to leave any game creation and graphics learning thoughts. Made with <a href="https://github.com/poole/lanyon" target="_blank">Lanyon</a>, a <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> theme.'
+tagline: My learning blog
 url: "https://amanthul.github.io"
 baseurl: ""
-paginate: 5
-permalink: pretty
-
-# About/contact
 author:
   name: Rudy Zhang
-  url: https://twitter.com/amanthul233
-  email: rxz2801@rit.edu
+  url: https://haochen-rudy-zhang.me
 
-# Gems
 plugins:
+  - jekyll-feed
   - jekyll-paginate
+  - jekyll-seo-tag
 
-# Custom vars
-version: 1.0.0
-google_analytics_id: UA-146052-15
+# Build Settings
+
+paginate: 5
+
+tags_path: /tags/
+categories_path: /categories/

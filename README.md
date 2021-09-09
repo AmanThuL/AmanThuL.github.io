@@ -1,134 +1,194 @@
-# Lanyon
+# Monophase <!-- omit in toc -->
 
-Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
+<a href="https://jekyll-themes.com">
+  <img src="https://img.shields.io/badge/featured%20on-JekyllThemes-red.svg" height="20" alt="Jekyll Themes Shield" >
+</a>
 
-![Lanyon](https://f.cloud.github.com/assets/98681/1825266/be03f014-71b0-11e3-9539-876e61530e24.png)
-![Lanyon with open sidebar](https://f.cloud.github.com/assets/98681/1825267/be04a914-71b0-11e3-966f-8afe9894c729.png)
+Monophase is *a one-column minimal responsive Jekyll blog theme*.
 
+One of the purposes of Monophase is to be an alternative option to the default theme of Jekyll—[Minima](https://github.com/jekyll/minima). Monophase is still keeping minimal, but meanwhile, more beautiful and mellow, and doesn't lose some useful basic features, such as archive.
 
-## Contents
+Check the *[live demo](https://zivlog.io/monophase/)*.
 
+![Screenshot Light](screenshot-light.png)
+![Screenshot Dark](screenshot-dark.png)
+
+## Highlight Features <!-- omit in toc -->
+
+- [Normalize.css](https://github.com/necolas/normalize.css)
+- [Open Color](https://github.com/yeun/open-color)
+- [Font Awesome](https://fontawesome.com/)
+- [Disqus](https://disqus.com/)
+- [MathJax](https://www.mathjax.org/)
+- [Google Analytics 4](https://support.google.com/analytics/answer/10089681?hl=en)
+- [Jekyll Feed](https://github.com/jekyll/jekyll-feed/)
+- [Jekyll Paginate](https://github.com/jekyll/jekyll-paginate)
+- [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag/)
+- Related posts (time-based, because Jekyll) below each post
+- Dark mode, via [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)
+- Archive implemented by pure [Liquid](https://shopify.github.io/liquid/)
+
+## Table of Contents <!-- omit in toc -->
+
+- [Installation](#installation)
 - [Usage](#usage)
-- [Options](#options)
-  - [Sidebar menu](#sidebar-menu)
-  - [Themes](#themes)
-  - [Reverse layout](#reverse-layout)
+  - [Global Configuration](#global-configuration)
+  - [Post Configuration](#post-configuration)
+  - [Homepage](#homepage)
+  - [Custom Head](#custom-head)
+  - [Navigation](#navigation)
+  - [Social Links](#social-links)
+  - [Alert Messages](#alert-messages)
+  - [Google Analytics 4](#google-analytics-4)
+  - [Archive](#archive)
+- [Contributing](#contributing)
 - [Development](#development)
-- [Author](#author)
 - [License](#license)
 
+## Installation
+
+Add this line to your Jekyll site's `Gemfile`:
+
+```ruby
+gem "monophase"
+```
+
+And add this line to your Jekyll site's `_config.yml`:
+
+```yaml
+theme: monophase
+```
+
+And then execute:
+
+```shell
+bundle
+```
+
+Or install it yourself as:
+
+```shell
+gem install monophase
+```
+
+You can also install the latest code via [`jekyll-remote-theme`](https://github.com/benbalter/jekyll-remote-theme):
+
+1. Add this line to your Jekyll site's `Gemfile`:
+
+    ```ruby
+    gem "jekyll-remote-theme"
+    ```
+
+2. Add these lines to your Jekyll site's `_config.yml`:
+
+    ```ruby
+    plugins:
+      - jekyll-remote-theme
+
+    remote_theme: zivhub/monophase@main
+    ```
 
 ## Usage
 
-Lanyon is a theme built on top of [Poole](https://github.com/poole/poole), which provides a fully furnished Jekyll setup—just download and start the Jekyll server. See [the Poole usage guidelines](https://github.com/poole/poole#usage) for how to install and use Jekyll.
+### Global Configuration
 
+| Variable | Type | Default | Specification |
+| -------- | ---- | ------- | ------------- |
+| `title` | String | --- | The title of the website |
+| `tagline` | String | --- | The tagline of the website |
+| `lang` | String | `en` | The language of pages; The value can be overwritten by the `lang` variable on each page |
+| `author.name` | String | --- | The name of the website author |
+| `author.url` | String | --- | A URL of the website author |
+| `tags_path` | String | --- | A path to the archive-by-tags page; It is used by tags on each post |
+| `categories_path` | String | --- | A path to the archive-by-categories page; It is used by categories on each post |
+| `disqus` | String | --- | Disqus short name |
+| `google_analytics` | String | --- | Google Analytics 4 Measurement ID |
 
-## Options
+### Post Configuration
 
-Lanyon includes some customizable options, typically applied via classes on the `<body>` element.
+| Variable | Type | Default | Specification |
+| -------- | ---- | ------- | ------------- |
+| `description` | String | --- | A description of the current post |
+| `last_modified_at` | String | --- | The date of the last modification you made on a post after its publishing |
+| `author` | String or Array | --- | The author name(s) of the post |
+| `comments` | Boolean | `true` | Does enable the Disqus comment system |
+| `math` | Boolean | `false` | Does enable MathJax on this page |
 
+### Homepage
 
-### Sidebar menu
+You can create a homepage for your blog by setting `layout: home` in your `index.html`.
 
-Create a list of nav links in the sidebar by assigning each Jekyll page the correct layout in the page's [front-matter](http://jekyllrb.com/docs/frontmatter/).
+### Custom Head
 
+Monophase leaves a placeholder to allow defining custom head. All you need to do is putting data into `_includes/custom-head.html`, and they would be automatically included in `<head>`.
+
+### Navigation
+
+The navigation bar of Monophase is configurable. You just need to specify titles and URLs in the file `_data/navigation.yml`, for example,
+
+```yml
+- title: About
+  url: /about/
+- title: Archive
+  url: /archive/
+- title: Categories
+  url: /categories/
 ```
+
+### Social Links
+
+Monophase allows you to show social links on the website. All you need to do is creating a file `_data/social.yml`, for example,
+
+```yml
+- title: Email
+  url: mailto:zivmsg@gmail.com
+  icon: fas fa-envelope
+- title: Twitter
+  url: https://twitter.com/zivtwt
+  icon: fab fa-twitter
+- title: GitHub
+  url: https://github.com/zivhub
+  icon: fab fa-github
+```
+
+### Alert Messages
+
+Monophase provides some predefined classes to specify different levels of **alert messages**. In order of tone from light to heavy, they are: `message-info`, `message-warning`, and `message-danger`. You may add it to single elements like a `<p>`, or to a parent if there are multiple elements to show.
+
+### Google Analytics 4
+
+To enable [Google Analytics 4](https://support.google.com/analytics/answer/10089681?hl=en), you just need to set the [Measurement ID](https://support.google.com/analytics/answer/7372977?hl=en) in your `_config.yml`, for example,
+
+```yml
+google_analytics: G-XXXXXXX
+```
+
+### Archive
+
+Monophase provides some built-in archive pages. It is implemented in pure Liquid. If you want to archive posts by years, you can create a page and put these code in it:
+
+```yml
 ---
-layout: page
-title: About
+layout: archive
+type: years
 ---
 ```
 
-**Why require a specific layout?** Jekyll will return *all* pages, including the `atom.xml`, and with an alphabetical sort order. To ensure the first link is *Home*, we exclude the `index.html` page from this list by specifying the `page` layout.
+Similarly, if you want to archive posts by categories or tags, you can set the `type` property as `categories` or `tags`.
 
+## Contributing
 
-### Themes
-
-Lanyon ships with eight optional themes based on the [base16 color scheme](https://github.com/chriskempson/base16). Apply a theme to change the color scheme (mostly applies to sidebar and links).
-
-![Lanyon with red theme](https://f.cloud.github.com/assets/98681/1825270/be065110-71b0-11e3-9ed8-9b8de753a4af.png)
-![Lanyon with red theme and open sidebar](https://f.cloud.github.com/assets/98681/1825269/be05ec20-71b0-11e3-91ea-a9138ef07186.png)
-
-There are eight themes available at this time.
-
-![Available theme classes](https://f.cloud.github.com/assets/98681/1817044/e5b0ec06-6f68-11e3-83d7-acd1942797a1.png)
-
-To use a theme, add any one of the available theme classes to the `<body>` element in the `default.html` layout, like so:
-
-```html
-<body class="theme-base-08">
-  ...
-</body>
-```
-
-To create your own theme, look to the Themes section of [included CSS file](https://github.com/poole/lanyon/blob/master/public/css/lanyon.css). Copy any existing theme (they're only a few lines of CSS), rename it, and change the provided colors.
-
-
-### Reverse layout
-
-![Lanyon with reverse layout](https://f.cloud.github.com/assets/98681/1825265/be03f2e4-71b0-11e3-89f1-360705524495.png)
-![Lanyon with reverse layout and open sidebar](https://f.cloud.github.com/assets/98681/1825268/be056174-71b0-11e3-88c8-5055bca4307f.png)
-
-Reverse the page orientation with a single class.
-
-```html
-<body class="layout-reverse">
-  ...
-</body>
-```
-
-
-### Sidebar overlay instead of push
-
-Make the sidebar overlap the viewport content with a single class:
-
-```html
-<body class="sidebar-overlay">
-  ...
-</body>
-```
-
-This will keep the content stationary and slide in the sidebar over the side content. It also adds a `box-shadow` based outline to the toggle for contrast against backgrounds, as well as a `box-shadow` on the sidebar for depth.
-
-It's also available for a reversed layout when you add both classes:
-
-```html
-<body class="layout-reverse sidebar-overlay">
-  ...
-</body>
-```
-
-### Sidebar open on page load
-
-Show an open sidebar on page load by modifying the `<input>` tag within the `sidebar.html` layout to add the `checked` boolean attribute:
-
-```html
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" checked>
-```
-
-Using Liquid you can also conditionally show the sidebar open on a per-page basis. For example, here's how you could have it open on the homepage only:
-
-```html
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" {% if page.title =="Home" %}checked{% endif %}>
-```
+Bug reports and pull requests are welcome on GitHub at [https://github.com/zivhub/monophase](https://github.com/zivhub/monophase). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 
-Lanyon has two branches, but only one is used for active development.
+To set up your environment to develop this theme, run `bundle install`.
 
-- `master` for development.  **All pull requests should be to submitted against `master`.**
-- `gh-pages` for our hosted site, which includes our analytics tracking code. **Please avoid using this branch.**
+Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
 
-
-## Author
-
-**Mark Otto**
-- <https://github.com/mdo>
-- <https://twitter.com/mdo>
-
+When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
+To add a custom directory to your theme-gem, please edit the regexp in `monophase.gemspec` accordingly.
 
 ## License
 
-Open sourced under the [MIT license](LICENSE.md).
-
-<3
+The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
