@@ -16,43 +16,43 @@ Btw, if you are unfamiliar with [Mixamo](https://www.mixamo.com/), it is basical
 
 ## Table of Contents <!-- omit in toc -->
 
-- [0 - Credits](#0---credits)
-- [1 - General Procedure](#1---general-procedure)
-  - [1.1 - Setting the environment](#11---setting-the-environment)
-  - [1.2 - Mixamo model upload](#12---mixamo-model-upload)
-    - [1.2.1 - Access to Mixamo](#121---access-to-mixamo)
-    - [1.2.2 - Upload a custom character model to Mixamo](#122---upload-a-custom-character-model-to-mixamo)
-    - [1.2.3 - Apply T-pose and download](#123---apply-t-pose-and-download)
-  - [1.3 - Importing the model into Unity](#13---importing-the-model-into-unity)
-    - [1.3.1 - Create an avatar](#131---create-an-avatar)
-    - [1.3.2 - Add the model to your scene](#132---add-the-model-to-your-scene)
-    - [1.3.3 - Add an Animator Controller](#133---add-an-animator-controller)
-  - [1.4 - Mixamo animations](#14---mixamo-animations)
-    - [1.4.1 - Search for an animation](#141---search-for-an-animation)
-    - [1.4.2 - Download the animation](#142---download-the-animation)
-  - [1.5 - Importing the animation into Unity](#15---importing-the-animation-into-unity)
-    - [1.5.1 - Reuse existing avatar](#151---reuse-existing-avatar)
-    - [1.5.2 - Set up the Animator Controller](#152---set-up-the-animator-controller)
-    - [1.5.3 - Add additional animations](#153---add-additional-animations)
-  - [1.6 - Testing the animation](#16---testing-the-animation)
-- [2 - Additional Tips](#2---additional-tips)
-  - [2.1 - Missing materials](#21---missing-materials)
-  - [2.2 - Other suggestions](#22---other-suggestions)
+- [0. Credits](#0-credits)
+- [1. General Procedure](#1-general-procedure)
+  - [1.1 Setting the environment](#11-setting-the-environment)
+  - [1.2 Mixamo model upload](#12-mixamo-model-upload)
+    - [1.2.1 Access to Mixamo](#121-access-to-mixamo)
+    - [1.2.2 Upload a custom character model to Mixamo](#122-upload-a-custom-character-model-to-mixamo)
+    - [1.2.3 Apply T-pose and download](#123-apply-t-pose-and-download)
+  - [1.3 Importing the model into Unity](#13-importing-the-model-into-unity)
+    - [1.3.1 Create an avatar](#131-create-an-avatar)
+    - [1.3.2 Add the model to your scene](#132-add-the-model-to-your-scene)
+    - [1.3.3 Add an Animator Controller](#133-add-an-animator-controller)
+  - [1.4 Mixamo animations](#14-mixamo-animations)
+    - [1.4.1 Search for an animation](#141-search-for-an-animation)
+    - [1.4.2 Download the animation](#142-download-the-animation)
+  - [1.5 Importing the animation into Unity](#15-importing-the-animation-into-unity)
+    - [1.5.1 Reuse existing avatar](#151-reuse-existing-avatar)
+    - [1.5.2 Set up the Animator Controller](#152-set-up-the-animator-controller)
+    - [1.5.3 Add additional animations](#153-add-additional-animations)
+  - [1.6 Testing the animation](#16-testing-the-animation)
+- [2. Additional Tips](#2-additional-tips)
+  - [2.1 Missing materials](#21-missing-materials)
+  - [2.2 Other suggestions](#22-other-suggestions)
 
 ---
 
-## 0 - Credits
+## 0. Credits
 
 - [How To: Getting Mixamo and Unity to work](https://forum.unity.com/threads/how-to-getting-mixamo-and-unity-to-work.560284/) by cloverme
 - [How to Import Mixamo Animations in Unity](https://www.walterpalladino.com/how-to-import-mixamo-animations-in-unity/) by Walter Palladino
 
 ---
 
-## 1 - General Procedure
+## 1. General Procedure
 
 This section is heavily based on [cloverme's post](https://forum.unity.com/threads/how-to-getting-mixamo-and-unity-to-work.560284/) on the Unity Forum. For visual demonstration, the tutorial will be using a boy model as an example.
 
-### 1.1 - Setting the environment
+### 1.1 Setting the environment
 
 First of all, you need to create a Unity project and two new folders under the Assets folder (or other subfolder under Assets).
 
@@ -61,9 +61,9 @@ First of all, you need to create a Unity project and two new folders under the A
 
 <img src="/img/mixamo/unity-folder-setup.png" width="100%">
 
-### 1.2 - Mixamo model upload
+### 1.2 Mixamo model upload
 
-#### 1.2.1 - Access to Mixamo
+#### 1.2.1 Access to Mixamo
 
 Link: [https://www.mixamo.com/](https://www.mixamo.com/)
 
@@ -71,7 +71,7 @@ Link: [https://www.mixamo.com/](https://www.mixamo.com/)
 
 > Mixamo is available free and does not require any additional purchases or subscriptions.
 
-#### 1.2.2 - Upload a custom character model to Mixamo
+#### 1.2.2 Upload a custom character model to Mixamo
 
 - To upload a custom character to Mixamo, simply click the **Upload Character** button on the right. Then, an upload prompt window will show up and that's where you drag and drop your model file to allow Mixamo process the character for you.
 
@@ -85,7 +85,7 @@ Link: [https://www.mixamo.com/](https://www.mixamo.com/)
 
 <img src="/img/mixamo/auto-rigger-review.png" width="100%">
 
-#### 1.2.3 - Apply T-pose and download
+#### 1.2.3 Apply T-pose and download
 
 - There's a T-pose pose in Mixamo, apply that pose first.
   - If your model isn't recognized by Mixamo's auto-rigging, ask someone on upwork first to fix the model and put into a T-pose.
@@ -98,9 +98,9 @@ Link: [https://www.mixamo.com/](https://www.mixamo.com/)
 
 - If Mixamo doesn't recognize your FBX file, try an OBJ format instead.
 
-### 1.3 - Importing the model into Unity
+### 1.3 Importing the model into Unity
 
-#### 1.3.1 - Create an avatar
+#### 1.3.1 Create an avatar
 
 - Import that *exact* FBX model you downloaded from Mixamo into your project.
   - You should drag it into the **Models** folder that was created earlier.
@@ -119,7 +119,7 @@ Link: [https://www.mixamo.com/](https://www.mixamo.com/)
 <img src="/img/mixamo/unity-avatar.png" width="100%">
 
 
-#### 1.3.2 - Add the model to your scene
+#### 1.3.2 Add the model to your scene
 
 - Drag and drop the character model into the hierarchy window or your open scene.
 - The model should have the animator component attached to the character object (parent).
@@ -127,7 +127,7 @@ Link: [https://www.mixamo.com/](https://www.mixamo.com/)
 
 <img src="/img/mixamo/animator-component.png" width="100%">
 
-#### 1.3.3 - Add an Animator Controller
+#### 1.3.3 Add an Animator Controller
 
 - In your **Animations** folder for the project, create an Animator Controller
   - Right click > Create > Animator Controller
@@ -138,9 +138,9 @@ Link: [https://www.mixamo.com/](https://www.mixamo.com/)
 
   <img src="/img/mixamo/controller-assigned.png" width="100%">
 
-### 1.4 - Mixamo animations
+### 1.4 Mixamo animations
 
-#### 1.4.1 - Search for an animation
+#### 1.4.1 Search for an animation
 
 - Go back to Mixamo. Your model should still be loaded there.
 
@@ -153,16 +153,16 @@ Link: [https://www.mixamo.com/](https://www.mixamo.com/)
 
   <img src="/img/mixamo/custom-rolling-settings.png" width="100%">
 
-#### 1.4.2 - Download the animation
+#### 1.4.2 Download the animation
 
 - Download that animation. Be sure to select "Without Skin" in the Skin dropdown because you have already downloaded the model with skin earlier that can be reused.
 
 <img src="/img/mixamo/without-skin.png" width="100%">
 
 
-### 1.5 - Importing the animation into Unity
+### 1.5 Importing the animation into Unity
 
-#### 1.5.1 - Reuse existing avatar
+#### 1.5.1 Reuse existing avatar
 
 - Use the "Import New Asset" function in Unity to import the downloaded animation into the **Animations** folder.
 
@@ -173,7 +173,7 @@ Link: [https://www.mixamo.com/](https://www.mixamo.com/)
 
 <img src="/img/mixamo/copy-from-other-avatar.png" width="100%">
 
-#### 1.5.2 - Set up the Animator Controller
+#### 1.5.2 Set up the Animator Controller
 
 - In your model, double click on the animation controller you added earlier. Drag and drop the clip you just downloaded.
 
@@ -183,11 +183,11 @@ Link: [https://www.mixamo.com/](https://www.mixamo.com/)
 
 <img src="/img/mixamo/set-animator-component.png" width="100%">
 
-#### 1.5.3 - Add additional animations
+#### 1.5.3 Add additional animations
 
 - To add additional animations, follow steps [1.4.1](#141---search-for-an-animation) to [1.5.2](#152---set-up-the-animator-controller).
 
-### 1.6 - Testing the animation
+### 1.6 Testing the animation
 
 - If you select an animation file, click on the "Animation" tab.
   - At the bottom, you will see an inspector with the downloaded model. Click on the "Play" button to test the animation.
@@ -196,9 +196,9 @@ Link: [https://www.mixamo.com/](https://www.mixamo.com/)
 
 ---
 
-## 2 - Additional Tips
+## 2. Additional Tips
 
-### 2.1 - Missing materials
+### 2.1 Missing materials
 
 - If the downloaded T-pose model from Mixamo is not correctly showing the material/texture while the one you uploaded should have it, you need to manually extract the material in Unity.
   - Select the downloaded model in the **Models** folder.
@@ -215,7 +215,7 @@ Link: [https://www.mixamo.com/](https://www.mixamo.com/)
   
   <img src="/img/mixamo/materials-location.png" width="100%">
 
-### 2.2 - Other suggestions
+### 2.2 Other suggestions
 
 - Add Rigidbody to your model, under constraints, for Rotation, check X and Z.
 - Add a collider. Depending on your model, capsule or box collider may work best. Mesh causes a lot of additional problems, finish this step and you can tweak it later on.
