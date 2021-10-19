@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "My experience w/ Unity and Mixamo"
-categories: Unity
+categories: [Unity]
 author:
 - Rudy
 ---

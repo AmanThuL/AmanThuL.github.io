@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Implement a multi-scene editor in Unity"
-categories: Unity
+categories: [Unity]
 author:
 - Rudy
 ---

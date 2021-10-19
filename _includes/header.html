@@ -5,16 +5,19 @@
   </div>
 
   {% if site.data.navigation %}
-    <nav class="nav">
-      <ul class="nav-list">
-      {% for item in site.data.navigation %}
+  <nav class="navbar-default navbar-fixed-top">
+    <div id="navbar container">
+      <ul class="nav-list nav navbar-right">
+        {% for item in site.data.navigation %}
         <li class="nav-item">
           <a href="{{ item.url | relative_url }}" class="{% if page.url == item.url %}current{% endif %}">
             {{ item.title }}
           </a>
         </li>
-      {% endfor %}
+        {% endfor %}
       </ul>
-    </nav>
-  {% endif %}
+    </div>
+    {% endif %}
+  </nav>
+
 </header>

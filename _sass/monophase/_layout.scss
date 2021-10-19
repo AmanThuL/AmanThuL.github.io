@@ -24,7 +24,7 @@
 }
 
 .masthead-title {
-  font-size: 1.3em;
+  font-size: 1.7em;
   font-weight: bold;
 
   a {
@@ -33,11 +33,12 @@
   }
 
   .tagline {
+    font-size: 60%;
     opacity: .5;
   }
 }
 
-.nav-list {  
+.nav-list {
   padding: 0;
   margin: var(--spacer) 0 0 0;
   border-top: 1px solid var(--border-color);
@@ -47,6 +48,7 @@
   li {
     display: inline-block;
     margin: 0 .4em;
+    right: 0;
   }
 
   a {
@@ -54,12 +56,12 @@
 
     &:hover,
     &:focus {
-      text-decoration: line-through;
+      text-decoration: underline;
     }
   }
 
   a.current {
-    text-decoration: line-through;
+    text-decoration: underline;
   }
 }
 
@@ -76,6 +78,8 @@
 
     .post-excerpt {
       margin-bottom: 0;
+      font-size: 0.9em;
+      font-style: italic;
     }
   }
 }
@@ -84,13 +88,19 @@
 .post {
   margin-bottom: var(--spacer-2);
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: var(--heading-color);
   }
 }
 
 .page-title,
 .post-title {
+  font-size: 1.6em;
   margin-top: 0;
 
   a {
@@ -162,6 +172,7 @@ a[href^="#fnref:"] {
   margin-left: .1em;
   font-weight: bold;
 }
+
 // List of footnotes
 .footnotes {
   margin-top: var(--spacer-2);
@@ -243,6 +254,7 @@ a[href^="#fnref:"] {
     border-top-left-radius: var(--border-radius);
     border-bottom-left-radius: var(--border-radius);
   }
+
   &:last-child {
     border-top-right-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
@@ -274,6 +286,7 @@ a.pagination-item:hover {
   margin: var(--spacer) 0;
   height: calc(var(--body-line-height) * var(--body-font-size));
 }
+
 .social-icon-item {
   float: left;
   margin-right: var(--spacer);
@@ -281,11 +294,19 @@ a.pagination-item:hover {
 
 @media screen and (min-width: $md-screen) {
   .footer {
-    display: flex;
+    //display: flex;
   }
+
   .footer-column {
     width: 100%;
   }
+
+  .footer-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
   .social-icons {
     margin: 0;
   }
