@@ -1,0 +1,9 @@
+{
+  "id": "3",
+  "slug": "mirage",
+  "theme": "hero_role_game",
+  "tags": ["C#", "Gameplay", "Unity", "Tech Art"],
+  "thumbnail": "https://picsum.photos/seed/mirage/800/600",
+  "gallery": ["https://picsum.photos/seed/mirage/800/600"],
+  "featured": false
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Larceny Lane",
+  "shortDescription": "2D 潜行黑色电影风格游戏。具有自定义视野锥和状态机 AI。",
+  "details": {
+    "overview": "Larceny Lane 使用自定义视野锥系统来检测玩家。AI 守卫具有巡逻、怀疑和追逐的状态机。",
+    "team": ["小组项目"],
+    "role": "AI 程序员",
+    "timeline": "2021 春",
+    "location": "课程项目",
+    "contributions": [
+      "设计了守卫 AI 状态机。",
+      "实现了基于 2D 光照的可见性检测。"
+    ],
+    "longFormContent": [],
+    "assetLinks": []
+  }
+}

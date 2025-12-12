@@ -1,0 +1,19 @@
+{
+  "title": "Island WFC Gen",
+  "shortDescription": "用于 3D 程序化岛屿生成的波函数坍缩算法。",
+  "details": {
+    "overview": "基于波函数坍缩 (WFC) 算法的实现，用于生成基于图块的 3D 岛屿。该工具允许设计师定义约束条件并生成无限变化的群岛。",
+    "team": ["Rudy Zhang"],
+    "role": "工具开发者",
+    "timeline": "2022 春",
+    "location": "个人项目",
+    "contributions": [
+      "实现了波函数坍缩 (WFC) 算法。",
+      "在 Unity 中设计了自定义编辑器界面，用于定义图块邻接规则。"
+    ],
+    "longFormContent": [],
+    "assetLinks": [
+      { "label": "查看演示", "url": "#" }
+    ]
+  }
+}

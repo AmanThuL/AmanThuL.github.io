@@ -1,0 +1,32 @@
+{
+  "title": "Mirage",
+  "shortDescription": "Atmospheric puzzle game in Unity. Developed complex environment interactions and cutscene systems.",
+  "details": {
+    "overview": "Mirage takes place inside the protagonist's home, which contains two unique, environment-based puzzles. The player is able to move and look around, as well as interact with certain objects in their environment to uncover the story.",
+    "team": ["Triton Adamski", "Pulkit Juneja", "David Patch", "Shubham Sachdeva", "Aditya Sinha"],
+    "role": "Gameplay Programmer, Level Designer, Technical Artist",
+    "timeline": "Fall 2020 - 3 Mos.",
+    "location": "Rochester, NY",
+    "contributions": [
+      "Created cutscenes for player interaction using Unity Timeline.",
+      "Designed the interior environment for the game.",
+      "Collaborated with teammates to develop puzzles in game.",
+      "Created a sell sheet for the game."
+    ],
+    "longFormContent": [
+      { "type": "heading", "content": "Hand Animation in Cutscenes" },
+      {
+        "type": "text",
+        "content": "The game consists of two puzzles in which the second one requires the player to turn on a series of switches in a correct sequence. To inform the player that the switch was successful, I decided to use cutscenes."
+      },
+      {
+        "type": "image",
+        "content": "https://picsum.photos/seed/blender/1200/600",
+        "caption": "Figure 1: Modifying animation curves in Blender."
+      }
+    ],
+    "assetLinks": [
+      { "label": "Furnished Cabin Asset", "url": "#" }
+    ]
+  }
+}

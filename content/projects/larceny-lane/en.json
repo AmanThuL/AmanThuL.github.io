@@ -1,0 +1,17 @@
+{
+  "title": "Larceny Lane",
+  "shortDescription": "2D Stealth Noir game. Features custom vision cones and state-machine AI.",
+  "details": {
+    "overview": "Larceny Lane uses a custom vision cone system to detect the player. The AI guards have state machines for patrolling, suspicion, and chasing.",
+    "team": ["Group Project"],
+    "role": "AI Programmer",
+    "timeline": "Spring 2021",
+    "location": "Class Project",
+    "contributions": [
+      "Designed the Guard AI state machine.",
+      "Implemented 2D lighting based visibility detection."
+    ],
+    "longFormContent": [],
+    "assetLinks": []
+  }
+}

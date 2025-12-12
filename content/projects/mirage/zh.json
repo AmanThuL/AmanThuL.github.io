@@ -1,0 +1,31 @@
+{
+  "title": "Mirage",
+  "shortDescription": "Unity 大气解谜游戏。开发了复杂的环境交互和过场动画系统。",
+  "details": {
+    "overview": "Mirage 发生在主角的家中，其中包含两个独特的基于环境的谜题。玩家可以移动和环顾四周，并与环境中的特定物体互动以揭开故事。",
+    "team": ["Triton Adamski", "Pulkit Juneja", "David Patch", "Shubham Sachdeva", "Aditya Sinha"],
+    "role": "玩法程序员, 关卡设计, 技术美术",
+    "timeline": "2020 秋 - 3个月",
+    "location": "Rochester, NY",
+    "contributions": [
+      "使用 Unity Timeline 创建玩家交互的过场动画。",
+      "设计了游戏的室内环境。",
+      "与队友合作开发游戏内的谜题。"
+    ],
+    "longFormContent": [
+      { "type": "heading", "content": "过场动画中的手部动画" },
+      {
+        "type": "text",
+        "content": "游戏包含两个谜题，第二个谜题要求玩家按正确顺序打开一系列开关。为了告知玩家开关操作成功，我决定使用过场动画。"
+      },
+      {
+        "type": "image",
+        "content": "https://picsum.photos/seed/blender/1200/600",
+        "caption": "图 1: 在 Blender 中修改动画曲线。"
+      }
+    ],
+    "assetLinks": [
+      { "label": "资源下载", "url": "#" }
+    ]
+  }
+}

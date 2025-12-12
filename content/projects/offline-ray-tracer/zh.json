@@ -1,0 +1,32 @@
+{
+  "title": "离线光线追踪器",
+  "shortDescription": "基于 C++20 构建的物理渲染器。实现了蒙特卡洛路径追踪和 BVH 加速结构。",
+  "details": {
+    "overview": "本项目探索了基于物理的渲染（PBR）的基础原理。我从零开始实现了一个路径追踪器，深入理解了光线传输、材质属性和采样策略。",
+    "team": ["Rudy Zhang"],
+    "role": "图形工程师",
+    "timeline": "2023 秋",
+    "location": "个人项目",
+    "contributions": [
+      "实现了蒙特卡洛路径追踪积分。",
+      "构建了 BVH（包围体层次结构）以加速光线求交。",
+      "支持多种材质类型，包括朗伯体、金属和绝缘体。"
+    ],
+    "longFormContent": [
+      { "type": "heading", "content": "核心实现" },
+      {
+        "type": "text",
+        "content": "渲染器的核心基于渲染方程。我利用 C++20 特性确保代码库的现代性和高效性。使用了 GLM 库处理线性代数运算。"
+      },
+      {
+        "type": "image",
+        "content": "https://picsum.photos/seed/raytracer_detail/1200/600",
+        "caption": "图 1: 景深与金属材质渲染效果。"
+      }
+    ],
+    "assetLinks": [
+      { "label": "GitHub 仓库", "url": "#" },
+      { "label": "技术文章", "url": "#" }
+    ]
+  }
+}

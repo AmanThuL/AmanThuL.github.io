@@ -1,6 +1,32 @@
-*.gem
-.bundle
-.jekyll-cache
-.sass-cache
-_site
-Gemfile.lock
+# Dependencies
+node_modules
+
+# Build output
+dist
+dist-ssr
+.vite
+
+# TypeScript / tooling caches
+*.tsbuildinfo
+.eslintcache
+
+# Coverage
+coverage
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Editor & OS
+.DS_Store
+*.swp
+.idea/
+.vscode/

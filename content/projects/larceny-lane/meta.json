@@ -1,0 +1,9 @@
+{
+  "id": "5",
+  "slug": "larceny-lane",
+  "theme": "hero_role_game",
+  "tags": ["AI", "C#", "Gameplay", "Unity"],
+  "thumbnail": "https://picsum.photos/seed/larceny/800/600",
+  "gallery": ["https://picsum.photos/seed/larceny/800/600"],
+  "featured": false
+}

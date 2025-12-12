@@ -1,0 +1,32 @@
+{
+  "title": "Offline Ray Tracer",
+  "shortDescription": "Physically based CPU renderer built with C++20. Implements Monte Carlo path tracing and BVH acceleration.",
+  "details": {
+    "overview": "This project explores the fundamentals of physically based rendering. I implemented a path tracer from scratch to understand light transport, material properties, and sampling strategies.",
+    "team": ["Rudy Zhang"],
+    "role": "Graphics Engineer",
+    "timeline": "Fall 2023",
+    "location": "Personal Project",
+    "contributions": [
+      "Implemented Monte Carlo Path Tracing integration.",
+      "Built a BVH (Bounding Volume Hierarchy) for accelerated ray intersection.",
+      "Supported varying material types including Lambertian, Metal, and Dielectrics."
+    ],
+    "longFormContent": [
+      { "type": "heading", "content": "Core Implementation" },
+      {
+        "type": "text",
+        "content": "The core of the renderer is based on the rendering equation. I utilized C++20 features to ensure the codebase was modern and efficient. The use of the GLM library handled the linear algebra requirements."
+      },
+      {
+        "type": "image",
+        "content": "https://picsum.photos/seed/raytracer_detail/1200/600",
+        "caption": "Figure 1: Depth of field and metallic material rendering."
+      }
+    ],
+    "assetLinks": [
+      { "label": "GitHub Repository", "url": "#" },
+      { "label": "Technical Writeup", "url": "#" }
+    ]
+  }
+}

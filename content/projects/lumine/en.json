@@ -1,0 +1,26 @@
+{
+  "title": "Lumine Engine",
+  "shortDescription": "Custom C++ graphics engine built on DirectX 12. Features deferred rendering, resource management, and PSO pipeline.",
+  "details": {
+    "overview": "Lumine is a custom graphics engine built to test the capabilities of DirectX 12. It features a deferred rendering pipeline and supports modern shading techniques.",
+    "team": ["Rudy Zhang"],
+    "role": "Engine Programmer",
+    "timeline": "Spring 2023",
+    "location": "Personal Project",
+    "contributions": [
+      "Setup DirectX 12 boiler plate: Device, Command Queues, and Swap Chain.",
+      "Implemented root signatures and pipeline state objects (PSOs).",
+      "Created a resource management system for buffers and textures."
+    ],
+    "longFormContent": [
+      { "type": "heading", "content": "DirectX 12 Challenges" },
+      {
+        "type": "text",
+        "content": "Managing manual resource barriers and memory allocation was the primary challenge. I used D3D12MA to help manage GPU memory heaps efficiently."
+      }
+    ],
+    "assetLinks": [
+      { "label": "Source Code", "url": "#" }
+    ]
+  }
+}

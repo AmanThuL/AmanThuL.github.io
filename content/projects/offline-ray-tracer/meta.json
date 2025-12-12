@@ -1,0 +1,12 @@
+{
+  "id": "1",
+  "slug": "offline-ray-tracer",
+  "theme": "hero_role_gpu",
+  "tags": ["C++", "Rendering", "Shader"],
+  "thumbnail": "https://picsum.photos/seed/raytracer/800/600",
+  "gallery": [
+    "https://picsum.photos/seed/raytracer/800/600",
+    "https://picsum.photos/seed/raytracer2/800/600"
+  ],
+  "featured": true
+}
