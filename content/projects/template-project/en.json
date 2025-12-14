@@ -1,0 +1,42 @@
+{
+  "title": "Template Project Title (English)",
+  "shortDescription": "One-line teaser for the project in English.",
+  "details": {
+    "overview": "Brief overview of the project. Explain the goal and what makes it interesting.\n\nUse <b>&lt;b&gt;...&lt;/b&gt;</b> to highlight key terms, and use blank lines to break longer writing into readable paragraphs.",
+    "team": ["Your Name", "Teammate Name"],
+    "role": ["Role 1", "Role 2"],
+    "timeline": "Season Year",
+    "location": "City, Country or Remote",
+    "contributions": [
+      "Key achievement or responsibility with a <b>highlight</b>.",
+      "Another highlight (keep bullets short and outcome-focused).",
+      "Third bullet about impact or results."
+    ],
+    "longFormContent": [
+      { "type": "heading", "content": "Section Heading" },
+      {
+        "type": "text",
+        "content": "Longer narrative text about the approach, constraints, or learnings.\n\nUse blank lines to separate paragraphs. Single line breaks also render if you need a deliberate pause.\n\nYou can add <b>multiple</b> text blocks to break up ideas."
+      },
+      {
+        "type": "image",
+        "content": "https://picsum.photos/seed/template-detail/1200/600",
+        "caption": "Optional caption for the image (supports <b>rich text</b>)."
+      },
+      {
+        "type": "image",
+        "content": "If you don't have an image URL yet, you can temporarily put descriptive text here. The UI will render this as a placeholder panel until you replace it with a real URL.",
+        "caption": "Placeholder example (no URL available yet)."
+      },
+      {
+        "type": "video",
+        "content": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+        "caption": "Optional video caption (MP4 URL)."
+      }
+    ],
+    "assetLinks": [
+      { "label": "Repository", "url": "https://example.com/repo" },
+      { "label": "Demo", "url": "https://example.com/demo" }
+    ]
+  }
+}

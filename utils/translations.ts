@@ -17,9 +17,12 @@ export type TranslationKey =
   | 'back_home'
   | 'back_blog'
   | 'read_time'
+  | 'project_media'
+  | 'project_toc'
   | 'project_overview'
   | 'project_contributions'
   | 'project_role'
+  | 'project_roles'
   | 'project_timeline'
   | 'project_team'
   | 'profile_intro_heading'
@@ -57,9 +60,12 @@ export const translations: Record<'en' | 'zh', Record<TranslationKey, string>> =
     back_home: 'Back to Grid',
     back_blog: 'Back to Database',
     read_time: 'read',
+    project_media: 'VISUAL_FEED',
+    project_toc: 'NAV_INDEX',
     project_overview: 'OVERVIEW',
     project_contributions: 'KEY_CONTRIBUTIONS',
     project_role: 'Role',
+    project_roles: 'Roles',
     project_timeline: 'Timeline',
     project_team: 'Team',
     profile_intro_heading: 'VISUAL_FEEDBACK_LOOP',
@@ -96,9 +102,12 @@ export const translations: Record<'en' | 'zh', Record<TranslationKey, string>> =
     back_home: '返回首页',
     back_blog: '返回数据库',
     read_time: '阅读',
+    project_media: '视觉素材',
+    project_toc: '目录导航',
     project_overview: '项目概览',
     project_contributions: '核心贡献',
     project_role: '担任角色',
+    project_roles: '担任角色',
     project_timeline: '时间轴',
     project_team: '团队成员',
     profile_intro_heading: '视觉反馈循环',

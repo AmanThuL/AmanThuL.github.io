@@ -1,0 +1,98 @@
+{
+  "title": "The Shattering Swords",
+  "shortDescription": "My team and I created a 3D third-person melee combat capstone game focusing on dynamic sword transformations and high-fidelity, stylized aesthetics.",
+  "details": {
+    "overview": "The Shattering Swords is a 3D third-person melee combat game that I helped develop with Team Bladesmiths as our one-year capstone project. The core premise centered on the player wielding the unique, gem-powered <b>Shattering Sword</b> to battle gem-powered constructs and defend their village.\n\nMy focus was on maintaining a cohesive artistic vision and improving our team's workflow, alongside developing crucial technical tools.\n\nWe emphasized fluid movement and tactical decision-making, requiring players to transform weapon forms on the fly to adapt mid-fight. Visually, we committed to a stylized look: low-poly silhouettes, minimalist textures, and saturated palettes inspired by Shin-hanga prints, all rendered in Unity's <b>High Definition Render Pipeline (HDRP)</b>.",
+    "team": [
+      "Rudy Zhang",
+      "Other Classmates (Team Bladesmiths)"
+    ],
+    "role": ["Lead Artist Workflow Coordinator", "Level Designer", "Technical Tools Developer", "Individual Research Author"],
+    "timeline": "1-Year College Capstone",
+    "location": "College Capstone Project",
+    "contributions": [
+      "Defined and enforced the game's stylized aesthetic, prioritizing <b>Low-Poly</b> models, <b>Minimalistic</b> textures, and <b>Saturated</b> colors inspired by Shin-hanga paintings, achieved using Unity's HDRP.",
+      "Managed communication and set up the workflow pipeline for our artists, including concept artists, modelers, riggers, UI, and VFX artists, ensuring efficient asset integration into the engine.",
+      "Responsible for the core <b>level design</b>, creating the map layout for 'The Village' and structuring the player's path, including where they start with Topaz, encounter enemies, obtain the Ruby and Sapphire gems, and face the Boss Battle.",
+      "Developed the <b>Multi-Scene Editor (MSE)</b>, a custom Unity editor tool critical for optimizing our workflow collaboration and managing large, streaming scene setups by handling scene load/save data.",
+      "Conducted extensive individual research on accelerating shadows and ambient occlusion computation using <b>Signed Distance Fields (SDFs)</b>, a required component of the capstone project."
+    ],
+    "longFormContent": [
+      {
+        "type": "heading",
+        "content": "Game Concept and Core Gameplay"
+      },
+      {
+        "type": "text",
+        "content": "The Shattering Swords is a 3D third-person melee combat game that challenges players to master high-stakes combat, requiring them to make life-or-death decisions while navigating enemy encounters.\n\nOur Minimum Viable Product (MVP) goal was to deliver a polished single-level experience within the village environment, complete with three distinct encounters and a boss fight."
+      },
+      {
+        "type": "image",
+        "content": "Description: A brightly colored, stylized village environment set against a grassy hill and forest background. The structures have distinct, colorful roofs, suggesting a pastoral setting.",
+        "caption": "Concept art illustrating the village environment where the capstone game takes place."
+      },
+      {
+        "type": "heading",
+        "content": "My Contributions to Dynamic Combat Mechanics"
+      },
+      {
+        "type": "text",
+        "content": "We established a core defensive triangle that players must master: <b>Blocking</b>, <b>Dodging</b>, and <b>Parrying</b>. I was involved in implementing these foundational combat systems.\n\n<b>Blocking</b> allows players to reduce incoming damage and maintain an indefinite stance. <b>Dodging</b> grants brief invincibility to avoid attacks. <b>Parrying</b> is a high-risk, high-reward mechanic with a very brief timing window, which we implemented to deflect direct attacks and reflect projectiles back at enemies."
+      },
+      {
+        "type": "image",
+        "content": "Description: Two side-by-side screenshots demonstrating the player character executing a dodge roll and standing ready to parry an incoming projectile from a purple, gem-powered construct.",
+        "caption": "Screenshots illustrating the timing and visual feedback of the Dodge Roll and Parrying mechanics."
+      },
+      {
+        "type": "heading",
+        "content": "The Shattering Sword Forms"
+      },
+      {
+        "type": "text",
+        "content": "The central innovation of our combat system is the player's ability to transform the <b>Shattering Sword</b> by socketing gems obtained from enemies. For the MVP, we developed three unique sword forms, each with distinctive visual effects (VFX) and gameplay statistics.\n\nI also ensured the UI clearly reflects the player's health via the sword itself.\n\n<b>Topaz Form:</b> We designed this form to prioritize Speed, Power, and Range, granting the player the <b>Lifesteal</b> ability for health recovery during combat.\n\n<b>Ruby Form:</b> This form emphasizes maximum Power and Range, sacrificing Speed but offering the powerful unique feature of <b>No Stagger</b>, allowing the player to power through enemy attacks.\n\n<b>Sapphire Form:</b> This form focuses on high Speed and moderate Range, equipping the player with a <b>Dash</b> ability and prioritizing rapid traversal and swift movements."
+      },
+      {
+        "type": "image",
+        "content": "Description: A radial UI element overlaid on the gameplay, showing indicators for switching between the Topaz (Yellow), Ruby (Red), and Sapphire (Blue) sword forms in real-time.",
+        "caption": "In-game user interface demonstrating the real-time switching mechanism for The Shattering Sword forms."
+      },
+      {
+        "type": "heading",
+        "content": "Aesthetic Direction and Technical Workflow Development"
+      },
+      {
+        "type": "text",
+        "content": "My primary responsibility involved coordinating the artistic vision and workflow. I established the game's aesthetic direction, favoring a <b>Low-Poly</b> approach with low levels of detail (LODs) for easier maintenance, combined with a <b>Minimalistic</b> use of simple, hand-painted textures. We chose highly <b>Saturated</b> color palettes inspired by Shin-hanga paintings and used Unity's <b>High Definition Render Pipeline (HDRP)</b> to maintain physical accuracy in lighting and materials.\n\nTo support our team's organization, we relied on sprints, task backlogs, and standups, emphasizing communication and adaptation.\n\nA crucial technical contribution I made was the development of the <b>Multi-Scene Editor (MSE)</b>, an internal tool that lets developers manipulate Unity scene hierarchy setups across multiple scenes. This was vital for improving collaboration and simplifying the process of building and managing streaming worlds."
+      },
+      {
+        "type": "image",
+        "content": "Description: A screenshot of the Multi-Scene Editor (MSE) interface within the Unity environment, showing options for loading, saving, and managing various scenes that compose a single level, alongside the hierarchy panel.",
+        "caption": "The custom <b>Multi-Scene Editor (MSE)</b> tool that I developed to streamline collaboration and scene management within Unity."
+      },
+      {
+        "type": "heading",
+        "content": "Individual Capstone Requirement: Advanced Graphics Research"
+      },
+      {
+        "type": "text",
+        "content": "As a requirement for the capstone, I wrote an individual research paper titled: <b>\"How Could Signed Distance Fields Potentially Accelerate Shadows and Ambient Occlusion Computation?\"</b>\n\nOur game leveraged Unity's <b>HDRP</b> to achieve high-fidelity graphics, but computationally expensive techniques like <b>Ambient Occlusion (AO)</b> (consuming approximately 20% of GPU frame time) and soft shadows (consuming about 10% of GPU frame time) posed significant performance challenges. My research investigated whether <b>Signed Distance Fields (SDFs)</b> could provide a unified approach to approximating both soft shadows and ambient occlusion.\n\nMy implementation explored several key stages: offline baking of local SDFs, runtime initialization and maintenance for the low-resolution <b>Global Distance Field (GDF)</b>, and subsequent rendering of DF Soft Shadows (DFSS) and Distance Field Ambient Occlusion (DFAO) using ray marching on the GDF texture.\n\nWhile this optimization was not integrated into the final game build, the prototype demonstrated the viability of GDF-based rendering techniques and successfully baked local SDF data in-editor.\n\nThe paper concluded that for maximum efficiency, the SDF rendering solution should be merged directly into the existing <b>HDRP</b> pipeline instead of running as a post-processed camera image effect, overriding the default shadow and ambient occlusion evaluation with GDF-driven GPU sampling."
+      },
+      {
+        "type": "image",
+        "content": "Description: A diagram illustrating the concept of Ray Emitting & Marching to calculate Distance Field Soft Shadows and Ambient Occlusion, using SDF data represented by geometry and lines, as described in my implementation methodology.",
+        "caption": "Conceptual diagram detailing the methodology for implementing DF Soft Shadows and Ambient Occlusion (AO) by ray marching through the SDF volume."
+      }
+    ],
+    "assetLinks": [
+      {
+        "label": "Final Pitch Presentation",
+        "url": "Provided via Source Materials"
+      },
+      {
+        "label": "Individual Research Report (SDF)",
+        "url": "Provided via Source Materials"
+      }
+    ]
+  }
+}

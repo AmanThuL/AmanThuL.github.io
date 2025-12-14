@@ -52,7 +52,7 @@ export const IntroSection: React.FC<IntroSectionProps> = ({
           <div className="absolute inset-4 border border-cool-2/20 rounded-full animate-reverse-spin opacity-50"></div>
           <div className="absolute inset-10 bg-bg-900 border border-white/20 overflow-hidden flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-700 group">
             <img
-              src="https://picsum.photos/seed/portrait_rudy/600/600"
+              src="https://www.dropbox.com/scl/fi/01kfu45y2eq5nxa408rym/linkedin_profile_photo_20251211_600x600.jpg?rlkey=k2bjgviog9qp7bjrt536uzwts&st=0d5qqc71&raw=1"
               alt="Rudy Zhang"
               className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-transform duration-700"
             />

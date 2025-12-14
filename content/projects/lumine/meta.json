@@ -1,9 +1,0 @@
-{
-  "id": "2",
-  "slug": "lumine",
-  "theme": "hero_role_gpu",
-  "tags": ["C++", "DirectX", "Rendering"],
-  "thumbnail": "https://picsum.photos/seed/lumine/800/600",
-  "gallery": ["https://picsum.photos/seed/lumine/800/600"],
-  "featured": true
-}

@@ -11,7 +11,7 @@ export interface ProjectTeamMember {
 export interface ProjectDetails {
   overview: string;
   team: string[];
-  role: string;
+  role: string | string[];
   timeline: string;
   location: string;
   contributions: string[];

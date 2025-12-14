@@ -62,7 +62,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, large = false
        {/* Background Glow */}
       <div className={`absolute inset-0 ${bgClass} opacity-0 group-hover:opacity-5 blur-xl transition-opacity duration-500`}></div>
 
-      <article 
+      <article
         className={`flex flex-col h-full bg-bg-900 border border-white/10 transition-all duration-300 relative overflow-hidden ${large ? 'md:flex-row' : ''}`}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -80,13 +80,13 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, large = false
         </div>
 
         {/* Image Container */}
-        <div className={`relative overflow-hidden bg-black ${large ? 'md:w-3/5 h-64 md:h-auto' : 'h-48'}`}>
+        <div className={`relative overflow-hidden bg-black flex-shrink-0 ${large ? 'md:w-3/5 h-64 md:h-auto' : 'h-48'}`}>
           <img
             src={project.gallery.length > 0 ? project.gallery[currentImageIndex] : project.thumbnail}
             alt={project.title}
             className={`w-full h-full object-cover transition-all duration-300 filter ${isHovered ? 'grayscale-0 contrast-110' : 'grayscale contrast-125'}`}
           />
-          
+
           {/* Glitch Overlay */}
           <div className={`absolute inset-0 bg-repeat opacity-0 group-hover:opacity-20 transition-opacity duration-100 pointer-events-none mix-blend-overlay z-10`}
                style={{ backgroundImage: 'url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNCIgaGVpZ2h0PSI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSI0IiBoZWlnaHQ9IjQiIGZpbGw9IiMwMDAiIGZpbGwtb3BhY2l0eT0iLjUiLz48L3N2Zz4=")' }}
@@ -103,12 +103,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, large = false
                     </span>
                 ))}
              </div>
-             <h3 className={`text-2xl font-pixel text-white mb-2 leading-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r ${gradient} transition-all`}>
+             <h3 className={`text-lg md:text-xl font-pixel text-white mb-2 leading-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r ${gradient} transition-all line-clamp-1`}>
                 {project.title.toUpperCase()}
              </h3>
           </div>
-          
-          <p className="text-sm text-gray-400 font-mono leading-relaxed mb-6 line-clamp-4">
+
+          <p className="text-xs sm:text-sm text-gray-400 font-mono leading-relaxed mb-6 line-clamp-3 min-h-[4.5em]">
             {project.shortDescription}
           </p>
 

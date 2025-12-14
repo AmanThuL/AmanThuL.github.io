@@ -26,10 +26,10 @@ export const ArchiveGrid: React.FC<ArchiveGridProps> = ({
 }) => {
   return (
     <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6 border-b border-white/10 pb-6">
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6 border-b border-white/10 pb-6">
         <SectionHeader title={title} subtitle={subtitle} subtitleClassName="text-cool-1" />
 
-        <div className="flex flex-wrap justify-end gap-2">
+        <div className="flex flex-wrap justify-start md:justify-end gap-2">
           <FilterButton
             active={selectedCategory === 'All'}
             onClick={() => onSelectCategory('All')}
@@ -63,7 +63,7 @@ export const ArchiveGrid: React.FC<ArchiveGridProps> = ({
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
               transition={{ duration: 0.3 }}
-              className="h-[350px]"
+              className="min-h-[380px] md:h-[410px]"
             >
               <ProjectCard project={project} />
             </motion.div>

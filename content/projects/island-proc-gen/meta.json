@@ -1,9 +1,0 @@
-{
-  "id": "4",
-  "slug": "island-proc-gen",
-  "theme": "hero_role_research",
-  "tags": ["AI", "C#", "Unity"],
-  "thumbnail": "https://picsum.photos/seed/island/800/600",
-  "gallery": ["https://picsum.photos/seed/island/800/600"],
-  "featured": false
-}

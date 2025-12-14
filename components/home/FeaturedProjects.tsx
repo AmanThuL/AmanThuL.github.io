@@ -25,7 +25,7 @@ export const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
           {projects.map((project) => (
-            <div key={project.id} className="h-[450px]">
+            <div key={project.id} className="min-h-[450px] md:h-[450px]">
               <ProjectCard project={project} large />
             </div>
           ))}

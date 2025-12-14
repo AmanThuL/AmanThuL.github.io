@@ -17,6 +17,7 @@ interface ProjectBase {
   thumbnail: string;
   gallery: string[];
   featured?: boolean;
+  hidden?: boolean; // optional flag to keep templates/drafts out of rendering
 }
 
 type MetaModule = { default: ProjectBase };
@@ -36,7 +37,8 @@ Object.entries(localeModules).forEach(([path, mod]) => {
   projectLocales[slug]![lang as Lang] = mod.default;
 });
 
-const sortedBases = [...projectBases].sort((a, b) => Number(a.id) - Number(b.id));
+const visibleBases = projectBases.filter((base) => !base.hidden);
+const sortedBases = [...visibleBases].sort((a, b) => Number(a.id) - Number(b.id));
 
 const buildProject = (base: ProjectBase, lang: Lang): Project => {
   const locale = projectLocales[base.slug]?.[lang] ?? projectLocales[base.slug]?.en;

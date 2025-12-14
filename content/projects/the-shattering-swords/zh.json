@@ -1,0 +1,32 @@
+{
+  "title": "示例项目标题（中文）",
+  "shortDescription": "项目的一句话中文简介。",
+  "details": {
+    "overview": "对项目的简要介绍。说明目标、难点或有趣之处。",
+    "team": ["你的名字", "队友姓名"],
+    "role": "你的职责",
+    "timeline": "季节 年份",
+    "location": "城市、国家或远程",
+    "contributions": [
+      "关键成就或职责。",
+      "另一条亮点。",
+      "第三条关于影响或结果的描述。"
+    ],
+    "longFormContent": [
+      { "type": "heading", "content": "章节标题" },
+      {
+        "type": "text",
+        "content": "更长的叙述文本，介绍方法、限制或收获。可以添加多个文本块拆分内容。"
+      },
+      {
+        "type": "image",
+        "content": "https://picsum.photos/seed/template-detail-zh/1200/600",
+        "caption": "图片说明（可选）。"
+      }
+    ],
+    "assetLinks": [
+      { "label": "代码仓库", "url": "https://example.com/repo" },
+      { "label": "演示链接", "url": "https://example.com/demo" }
+    ]
+  }
+}
